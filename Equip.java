@@ -18,6 +18,6 @@ public abstract class Equip {
     }
 
     public ArrayList<Personatge> getPersonatges() {
-        return personatges;
+        return new ArrayList<>(personatges);
     }
 }
