@@ -1,0 +1,15 @@
+public class Joc {
+    Combatents combatents;
+
+    public void executar() {
+        combatents = new Combatents();
+        crearEquips();
+        combatents.torn();
+    }
+
+    public void crearEquips() {
+        combatents.afegir(new EquipArquers("Equip arquers A"));
+        combatents.afegir(new EquipArquers("Equip arquers B"));
+        combatents.afegir(new EquipArquers("Equip arquers C"));
+    }
+}

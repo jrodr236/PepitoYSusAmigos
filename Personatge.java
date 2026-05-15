@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public abstract class Personatge {
     private String nom;
     private final int VIDA_INICIAL = 100;
@@ -12,13 +14,19 @@ public abstract class Personatge {
         malFet = 0;
     }
 
+    public void torn(Combatents combatents) {
+        ArrayList<Personatge> oponents = combatents.obtenirPersonatgesVius();
+        Personatge oponent = UI.escollirOponent(this, oponents);
+        atacar(oponent);
+    }
+
     abstract public void atacar(Personatge oponent);
 
     protected void atacarAmbMal(Personatge oponent, int mal) {
+        System.out.println(this + " ataca a " + oponent + " i li llança " + mal + " punts de mal");
         if (estaViu) {
             oponent.rebreMal(mal);
         }
-        System.out.println(this + " ataca a " + oponent + " i li llança " + mal + " punts de mal");
     }
 
     public void rebreMal(int mal) {
