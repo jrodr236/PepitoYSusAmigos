@@ -4,7 +4,7 @@ public class Joc {
     public void executar() {
         combatents = new Combatents();
         crearEquips();
-        if (combatents.equipsAmbVius() > 1) {
+        while (combatents.equipsAmbVius() > 1) {
             combatents.torn();
         }
     }
