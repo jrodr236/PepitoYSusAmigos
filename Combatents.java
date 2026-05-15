@@ -20,7 +20,7 @@ public class Combatents {
     public ArrayList<Personatge> obtenirPersonatges() {
         ArrayList<Personatge> personatges = new ArrayList<>();
         for (Equip e : equips) {
-            personatges.addAll(e.obtenirPersonatges());
+            personatges.addAll(e.getPersonatges());
         }
         return personatges;
     }
