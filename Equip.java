@@ -18,10 +18,10 @@ public abstract class Equip {
     }
 
     public ArrayList<Personatge> obtenirPersonatges() {
-        ArrayList<Personatge> personatges = new ArrayList<>();
+        ArrayList<Personatge> personatgesObtinguts = new ArrayList<>();
         for (Personatge p : personatges) {
-            personatges.add(p);
+            personatgesObtinguts.add(p);
         }
-        return personatges;
+        return personatgesObtinguts;
     }
 }
