@@ -16,7 +16,7 @@ public class Arquer extends Personatge {
             int mal = Dau.tirar(20) + 20;
             atacarAmbMal(oponent, mal);
             fletxes--;
-            if (fletxes<0) {
+            if (fletxes<=0) {
                 rondesPendentsPerFabricar = RONDES_PER_FABRICAR;
             }
         }
