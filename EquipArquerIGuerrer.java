@@ -1,7 +1,7 @@
 public class EquipArquerIGuerrer extends Equip {
     public EquipArquerIGuerrer(String nom) {
         super(nom);
-        personatges.add(new Arquer("Alys", this));
-        personatges.add(new Guerrer("Borguin", this));
+        afegirPersonatge(new Arquer("Alys", this));
+        afegirPersonatge(new Guerrer("Borguin", this));
     }
 }

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public abstract class Equip {
     private String nom;
-    protected ArrayList<Personatge> personatges;
+    private ArrayList<Personatge> personatges;
 
     public Equip(String nom) {
         this.nom = nom;
@@ -33,5 +33,9 @@ public abstract class Equip {
 
     public String getNom() {
         return nom;
+    }
+
+    public void afegirPersonatge(Personatge p) {
+        personatges.add(p);
     }
 }
