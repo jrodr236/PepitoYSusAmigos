@@ -5,7 +5,7 @@ public class PokoMoko extends Personatge{
     }
 
     @Override
-    public void atacar (Personatge oponent) {
+    public void ferAccio (Personatge oponent) {
         int mal = Dau.tirar(10);
         atacarAmbMal(oponent, mal);
         augmentarMalFet(mal);
@@ -21,5 +21,6 @@ public class PokoMoko extends Personatge{
         }
 
         super.rebreMal(malAcabat);
+
     }
 }
